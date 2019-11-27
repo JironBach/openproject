@@ -151,6 +151,8 @@ module OpenProject
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
+    config.hosts = "ec2-18-222-92-16.us-east-2.compute.amazonaws.com"
+
     # Make Active Record use stable #cache_key alongside new #cache_version method.
     # This is needed for recyclable cache keys.
     # We will want check https://blog.heroku.com/cache-invalidation-rails-5-2-dalli-store
