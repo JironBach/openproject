@@ -182,6 +182,8 @@ gem 'rest-client', '~> 2.0'
 
 gem 'ruby-progressbar', '~> 1.10.0', require: false
 
+gem 'foreman'
+
 group :test do
   gem 'launchy', '~> 2.4.3'
   gem 'rack-test', '~> 1.1.0'
@@ -279,14 +281,15 @@ gem 'reform', '~> 2.2.0'
 gem 'reform-rails', '~> 0.1.7'
 gem 'roar', '~> 1.1.0'
 
-platforms :mri, :mingw, :x64_mingw do
-  group :postgres do
-    gem 'pg', '~> 1.1.0'
-  end
+#platforms :mri, :mingw, :x64_mingw do
+#  group :postgres do
+#    gem 'pg', '~> 1.1.0'
+#  end
 
-  # Support application loading when no database exists yet.
-  gem 'activerecord-nulldb-adapter', '~> 0.4.0'
-end
+#  # Support application loading when no database exists yet.
+#  gem 'activerecord-nulldb-adapter', '~> 0.4.0'
+#end
+gem 'pg', '~> 1.1.0'
 
 group :opf_plugins do
   gem 'openproject-translations', git: 'https://github.com/opf/openproject-translations.git', branch: 'dev'
