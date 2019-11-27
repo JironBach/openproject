@@ -123,7 +123,7 @@ module OpenProject
     config.middleware.use Rack::TempfileReaper
 
     # Custom directories with classes and modules you want to be autoloadable.
-    config.enable_dependency_loading = true
+    config.enable_dependency_loading = false
     config.paths.add Rails.root.join('lib').to_s, eager_load: true
     config.paths.add Rails.root.join('lib/constraints').to_s, eager_load: true
 
@@ -151,7 +151,9 @@ module OpenProject
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
-    config.hosts = "ec2-18-222-92-16.us-east-2.compute.amazonaws.com"
+    config.autoload_paths << Rails.root.join("lib")
+
+    #config.hosts = "ec2-18-222-92-16.us-east-2.compute.amazonaws.com"
 
     # Make Active Record use stable #cache_key alongside new #cache_version method.
     # This is needed for recyclable cache keys.

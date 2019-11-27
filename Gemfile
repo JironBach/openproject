@@ -145,6 +145,7 @@ gem 'cells-rails', '~> 0.0.9'
 gem 'meta-tags', '~> 2.11.0'
 
 gem 'mini_racer'
+gem 'jquery-rails'
 
 group :production do
   # we use dalli as standard memcache client
