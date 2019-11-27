@@ -579,6 +579,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.7.0)
       launchy (~> 2.2)
+    libv8 (7.3.492.27.1)
     livingstyleguide (2.1.0)
       minisyntax (>= 0.2.5)
       redcarpet
@@ -611,6 +612,8 @@ GEM
     mimemagic (0.3.3)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
+    mini_racer (0.2.8)
+      libv8 (>= 6.9.411)
     minisyntax (0.2.5)
     minitest (5.13.0)
     mixlib-shellout (2.1.0)
@@ -1004,6 +1007,7 @@ DEPENDENCIES
   livingstyleguide (~> 2.1.0)
   lograge (~> 0.10.0)
   meta-tags (~> 2.11.0)
+  mini_racer
   multi_json (~> 1.13.1)
   my_page!
   net-ldap (~> 0.16.0)
@@ -1110,4 +1114,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.0.2
+   2.0.1
