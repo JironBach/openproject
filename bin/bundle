@@ -1,3 +1,21 @@
-#!/usr/bin/env ruby
-ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
-load Gem.bin_path('bundler', 'bundle')
+#!/usr/bin/env bash
+set -e
+[ -n "$RBENV_DEBUG" ] && set -x
+
+program="${0##*/}"
+if [ "$program" = "ruby" ]; then
+  for arg; do
+    case "$arg" in
+    -e* | -- ) break ;;
+    */* )
+      if [ -f "$arg" ]; then
+        export RBENV_DIR="${arg%/*}"
+        break
+      fi
+      ;;
+    esac
+  done
+fi
+
+export RBENV_ROOT="/Users/js/.rbenv"
+exec "/Users/js/.rbenv/libexec/rbenv" exec "$program" "$@"
