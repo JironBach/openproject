@@ -972,6 +972,7 @@ DEPENDENCIES
   bourbon (~> 6.0.0)
   brakeman (~> 4.6.1)
   browser (~> 2.6.1)
+  bundler (~> 2.0.1)
   capybara (~> 3.29.0)
   capybara-screenshot (~> 1.0.17)
   capybara-select2!
