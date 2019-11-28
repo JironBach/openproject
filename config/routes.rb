@@ -574,4 +574,10 @@ OpenProject::Application.routes.draw do
   if Rails.env.development?
     get '/styleguide' => redirect('/assets/styleguide.html')
   end
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: '/letter_opener'
+    #mount LetterOpener::Engine, at: '/letter_opener'
+  end
+
 end

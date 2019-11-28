@@ -28,6 +28,7 @@
 #++
 
 class UserMailer < BaseMailer
+  default from: Setting.mail_from#debug
 
   def test_mail(user)
     @welcome_url = url_for(controller: '/homescreen')

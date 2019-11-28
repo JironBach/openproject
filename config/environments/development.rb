@@ -57,7 +57,7 @@ OpenProject::Application.configure do
   config.action_controller.perform_caching = true
 
   # Don't perform caching for Action Mailer in development
-  config.action_mailer.perform_caching = false
+  #config.action_mailer.perform_caching = false
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -82,7 +82,13 @@ OpenProject::Application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Send mails to browser window
-  config.action_mailer.delivery_method = :letter_opener
+  #config.action_mailer.delivery_method = :letter_opener
+
+  config.action_mailer.perform_caching = true # falseをtrueに修正
+
+  config.action_mailer.default_url_options = { host: 'localhost:3000' } # 追加
+  config.action_mailer.delivery_method = :letter_opener_web # 追加
+
 end
 
 ActiveRecord::Base.logger = Logger.new(STDOUT) unless String(ENV["SILENCE_SQL_LOGS"]).to_bool
