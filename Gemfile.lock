@@ -972,7 +972,7 @@ DEPENDENCIES
   bourbon (~> 6.0.0)
   brakeman (~> 4.6.1)
   browser (~> 2.6.1)
-  bundler (= 2.0.1)
+  bundler (= 2.0.2)
   capybara (~> 3.29.0)
   capybara-screenshot (~> 1.0.17)
   capybara-select2!
@@ -1124,4 +1124,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
