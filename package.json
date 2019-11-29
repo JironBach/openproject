@@ -6,7 +6,9 @@
     "test": "cd frontend && npm test && cd ..",
     "tslint_typechecks": "cd frontend && npm run tslint_typechecks && cd ..",
     "serve": "cd frontend && npm run serve",
-    "serve-public": "cd frontend && ./node_modules/.bin/ng serve --host 0.0.0.0"
+    "serve-public": "cd frontend && ./node_modules/.bin/ng serve --host 0.0.0.0",
+    "heroku-postbuild": "ng build",
+    "preinstall": "npm install -g node-gyp"
   },
   "private": true,
   "engines": {
