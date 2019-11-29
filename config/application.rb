@@ -152,6 +152,8 @@ module OpenProject
     config.active_support.escape_html_entities_in_json = true
 
     config.autoload_paths << Rails.root.join("lib")
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
     #config.hosts = "ec2-18-222-92-16.us-east-2.compute.amazonaws.com"
 
