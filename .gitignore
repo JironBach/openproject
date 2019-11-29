@@ -58,7 +58,7 @@ npm-debug.log*
 /config/configuration.yml
 /config/database.yml
 /config/email.yml
-/config/secret_token.yml
+#/config/secret_token.yml
 /config/frontend_assets.manifest.json
 /coverage
 /db/*.db
