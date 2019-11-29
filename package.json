@@ -7,11 +7,15 @@
     "tslint_typechecks": "cd frontend && npm run tslint_typechecks && cd ..",
     "serve": "cd frontend && npm run serve",
     "serve-public": "cd frontend && ./node_modules/.bin/ng serve --host 0.0.0.0",
-    "heroku-postbuild": "ng build",
-    "preinstall": "npm install -g node-gyp"
+    "preinstall": "npm install -g node-gyp",
+    "heroku-postinstall": "ng build --aot -prod"
   },
   "private": true,
   "engines": {
     "node": "~10.15.3"
+  },
+  "devDependencies": {
+    "@angular/cli": "^8.3.20",
+    "@angular/compiler-cli": "^8.2.14"
   }
 }
