@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "postinstall": "cd frontend && npm install",
-    "postinstall": "ng build --aot -prod",
+    "heroku-postbuild": "ng build --aot -prod",
     "test": "cd frontend && npm test && cd ..",
     "tslint_typechecks": "cd frontend && npm run tslint_typechecks && cd ..",
     "serve": "cd frontend && npm run serve",
