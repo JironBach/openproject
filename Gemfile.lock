@@ -486,7 +486,7 @@ GEM
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
-    faker (2.7.0)
+    faker (2.8.0)
       i18n (>= 1.6, < 1.8)
     faraday (0.17.1)
       multipart-post (>= 1.2, < 3)
@@ -949,7 +949,7 @@ GEM
     will_paginate (3.1.8)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.2.1)
+    zeitwerk (2.2.2)
 
 PLATFORMS
   ruby
@@ -972,7 +972,6 @@ DEPENDENCIES
   bourbon (~> 6.0.0)
   brakeman (~> 4.6.1)
   browser (~> 2.6.1)
-  bundler (= 2.0.2)
   capybara (~> 3.29.0)
   capybara-screenshot (~> 1.0.17)
   capybara-select2!
